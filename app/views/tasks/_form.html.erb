@@ -7,6 +7,7 @@
   <div class="form-group">
     <%= f.label :details %>
     <%= f.text_area :details, class: 'form-control' %>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   </div>
 
   <% unless f.object.new_record? %>
